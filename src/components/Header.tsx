@@ -1,4 +1,4 @@
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from "lucide-react";
 
 export default function Header() {
   return (
@@ -8,23 +8,27 @@ export default function Header() {
           <div className="w-8 h-8 bg-warm-gold rounded-full flex items-center justify-center font-helvetica font-bold text-ocean-blue text-lg">
             G
           </div>
-          <h1 className="font-helvetica font-black text-xl">Global Cleaners</h1>
+          <h1 className="font-helvetica font-black text-base sm:text-xl">Global Cleaners</h1>
         </div>
-        
-        <div className="flex items-center gap-4">
-          <a 
-            href="tel:0123456789" 
-            className="flex items-center gap-1.5 hover:text-warm-gold transition-colors duration-200"
+
+        <div className="flex items-center gap-2 sm:gap-4">
+          <a
+            href="tel:0123456789"
+            className="flex items-center gap-1 sm:gap-1.5 hover:text-warm-gold transition-colors duration-200"
           >
-            <Phone size={16} />
-            <span className="font-helvetica font-medium text-sm">0123 456 789</span>
+            <Phone size={16} className="flex-shrink-0" />
+            <span className="font-helvetica font-medium text-xs sm:text-sm whitespace-nowrap">
+              0163 8075088
+            </span>
           </a>
-          <a 
-            href="mailto:info@globalcleaners.de" 
-            className="flex items-center gap-1.5 hover:text-warm-gold transition-colors duration-200"
+          <a
+            href="mailto:info@globalcleaners.de"
+            className="flex items-center gap-1 sm:gap-1.5 hover:text-warm-gold transition-colors duration-200"
           >
-            <Mail size={16} />
-            <span className="font-helvetica font-medium text-sm">info@globalcleaners.de</span>
+            <Mail size={16} className="flex-shrink-0" />
+            <span className="font-helvetica font-medium text-xs sm:text-sm hidden sm:inline">
+              info@globalcleaners.de
+            </span>
           </a>
         </div>
       </div>
