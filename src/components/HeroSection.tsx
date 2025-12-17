@@ -1,7 +1,13 @@
 import { Check } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const images = ["/images/image.png", "/hero-image.jpg"];
+const images = [
+  "/images/image.png",
+  "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80",
+  "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
+  "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80",
+  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+];
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -49,16 +55,17 @@ export default function HeroSection() {
         </button>
       </div>
       {/* Right Panel - Hero Image Slideshow */}
-      <div className="lg:col-span-1 relative overflow-hidden rounded-2xl">
+      <div className="lg:col-span-1 relative overflow-hidden rounded-2xl min-h-[300px]">
         <div className="absolute inset-0 bg-gradient-to-br from-ocean-blue/40 via-transparent to-ocean-blue/60 z-10"></div>
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Cleaning service ${index + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
               index === currentImage ? "opacity-100" : "opacity-0"
             }`}
+            style={{ objectPosition: 'center center' }}
           />
         ))}
 
