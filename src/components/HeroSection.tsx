@@ -55,7 +55,7 @@ export default function HeroSection() {
         </button>
       </div>
       {/* Right Panel - Hero Image Slideshow */}
-      <div className="lg:col-span-1 relative overflow-hidden rounded-2xl min-h-[300px]">
+      <div className="lg:col-span-1 relative overflow-hidden rounded-2xl h-full">
         <div className="absolute inset-0 bg-gradient-to-br from-ocean-blue/40 via-transparent to-ocean-blue/60 z-10"></div>
         {images.map((image, index) => (
           <img
