@@ -12,7 +12,7 @@ export default function ContactCard() {
         
         <div className="space-y-2.5 relative z-10">
           <a 
-            href="tel:0123456789"
+            href="tel:01638075088"
             className="flex items-center gap-2 group cursor-pointer"
           >
             <div className="w-8 h-8 rounded-full bg-ocean-blue flex items-center justify-center group-hover:bg-warm-gold transition-colors duration-200">
@@ -21,7 +21,7 @@ export default function ContactCard() {
             <div>
               <p className="font-helvetica text-[10px] text-gray-500">Telefon</p>
               <p className="font-helvetica font-semibold text-sm text-ocean-blue group-hover:text-warm-gold transition-colors">
-                0123 456 789
+                0163 8075088
               </p>
             </div>
           </a>

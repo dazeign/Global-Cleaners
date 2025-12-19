@@ -13,7 +13,7 @@ export default function Header() {
 
         <div className="flex items-center gap-2 sm:gap-4">
           <a
-            href="tel:0123456789"
+            href="tel:01638075088"
             className="flex items-center gap-1 sm:gap-1.5 hover:text-warm-gold transition-colors duration-200"
           >
             <Phone size={16} className="flex-shrink-0" />

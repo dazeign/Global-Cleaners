@@ -48,7 +48,7 @@ export default function HeroSection() {
         </div>
 
         <button
-          onClick={() => (window.location.href = "tel:0123456789")}
+          onClick={() => (window.location.href = "mailto:info@globalcleaners.de")}
           className="bg-vibrant-red text-white font-helvetica font-semibold text-base px-6 py-3 rounded-lg hover:scale-105 transition-transform duration-200 shadow-lg hover:shadow-xl w-fit"
         >
           Jetzt unverbindliches Angebot anfordern!
